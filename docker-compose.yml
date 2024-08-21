@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  project_example:
+      container_name: project_example
+      restart: always
+      build:
+        context: .
+      env_file:
+        - ./docker/project_example/dev.env
+      volumes:
+        - app_volume:/app:z
+      depends_on:
+        - chrome
+      ports:
+        - "8000:8000"
+
+volumes:
+  app_volume:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ./app

@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fake-http-header = "*"
+fastapi = "*"
+awscli = "*"
+pydantic-settings = "*"
+pydantic-extra-types = "*"
+phonenumbers = "*"
+orjson = "*"
+uvicorn = "*"
+python-jose = "*"
+structlog = "*"
+dateparser = "*"
+redis = "*"
+aiocache = "*"
+tenacity = "*"
+httpx = "*"
+pytest = "*"
+pyodbc = "*"
+sqlalchemy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
